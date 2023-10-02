@@ -32,7 +32,29 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.defaultColor {
+  background-color: #1c9799;
+}
+
+.start {
+  background-color: #0d6efd;
+}
+
+.goal {
+  background-color: #dc3545;
+}
+
+.block {
+  background-color: #212529;
+}
+
+#root {
+  min-height: 100vh !important;
+  background-color: #212529;
 }

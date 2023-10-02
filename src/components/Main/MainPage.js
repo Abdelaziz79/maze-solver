@@ -222,54 +222,54 @@ const MainPage = () => {
                     {cubes}
                 </div>
             </Container>
-            <Container className="  w-100 rounded-1 p-3">
-                <Row className="d-flex justify-content-center  align-items-center mt-3">
-                    <Col className="col-2">
+            <div className="  w-100 rounded-1 p-3">
+                <Row className="d-flex justify-content-center text-center align-items-center mt-3">
+                    <Col className="col-12 ">
                         <label for="numRows" className="form-label" >Number of Rows</label>
                     </Col>
-                    <Col className="col-2">
+                    <Col className="col-4">
                         <input type="number" className="form-control bg-dark text-white" id="numRows" value={numRows} onChange={(e) => setNumRows(e.target.value)} min={1} max={12} />
                     </Col>
                 </Row>
-                <Row className="d-flex  justify-content-center align-items-center mt-3">
-                    <Col className="col-2">
+                <Row className="d-flex  justify-content-center text-center align-items-center mt-3">
+                    <Col className="col-12">
                         <label for="numCols" className="form-label" >Number of Columns</label>
                     </Col>
-                    <Col className="col-2">
+                    <Col className="col-4">
                         <input type="number" className="form-control bg-dark text-white" id="numCols" value={numCols} onChange={(e) => setNumCols(e.target.value)} min={1} max={12} />
                     </Col>
                 </Row>
-                <Row className="d-flex justify-content-center align-items-center mt-3">
-                    <Col className="col-2">
+                <Row className="d-flex justify-content-center text-center align-items-center mt-3">
+                    <Col className="col-12">
                         <label for="waiting" className="form-label" >Waiting Time</label>
                     </Col>
-                    <Col className="col-2">
+                    <Col className="col-4">
                         <input type="number" className="form-control bg-dark text-white" id="waiting" value={waiting} onChange={(e) => setWaiting(e.target.value)} min={0.1} max={3} />
                     </Col>
                 </Row>
-                <Row className=" mt-5 d-flex justify-content-center">
-                    <Col className="col-2">
+                <Row className=" mt-5 d-flex text-center justify-content-center">
+                    <Col className="col-12">
                         <Button variant="primary" type="submit" onClick={() => { setCubes(createCubes(numCols, numRows)) }} className="mt-3">Create</Button>
                     </Col>
 
-                    <Col className="col-3">
+                    <Col className="col-12">
                         <Button variant="primary" type="submit" onClick={() => { bfs(); }} className="mt-3">Breadth-First Search</Button>
                     </Col>
 
 
-                    <Col className="col-3">
+                    <Col className="col-12">
                         <Button variant="primary" type="submit" onClick={() => { dfs(); }} className="mt-3">Depth-First Search</Button>
                     </Col>
 
-                    <Col className="col-3">
+                    <Col className="col-12">
                         <Button variant="primary" type="submit" onClick={() => { randomCreation(); }} className="mt-3">Random Creation</Button>
                     </Col>
-                    <Col className="col-3">
+                    <Col className="col-12">
                         <h1 className="mt-3 text-white">moves: {counter}</h1>
                     </Col>
                 </Row>
 
-            </Container>
+            </div>
         </div>
     );
 

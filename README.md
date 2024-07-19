@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Maze Solver Project
+![image](https://github.com/user-attachments/assets/27497872-ffce-4d81-8b9b-597efe1a6882)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web-based maze solver application developed using React and Bootstrap. The application allows users to create and interact with a maze, set start and end points, add obstacles, and solve the maze using either Breadth-First Search (BFS) or Depth-First Search (DFS) algorithms. Users can also control the speed of the solver and adjust the maze dimensions.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Demo](#demo)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Create a maze with customizable rows and columns.
+- Click on boxes to set them as the source, target, or obstacles:
+  - Single click to set a box as the source.
+  - Double click to set a box as the target.
+  - Triple click to set a box as an obstacle.
+  - Quadruple click to reset a box to normal.
+- Randomly generate source, target, and obstacles.
+- Solve the maze using BFS or DFS algorithms.
+- Control the speed of the maze solver.
+- Responsive design using Bootstrap for a smooth user experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+Check out the live demo of the application [here](https://azeez-app-maze-solver.surge.sh/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requirements
 
-### `npm run build`
+- Node.js and npm (Node Package Manager)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```sh
+   git clone https://github.com/Abdelaziz79/maze-solver.git
+   ```
 
-### `npm run eject`
+2. **Navigate to the project directory:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```sh
+   cd maze-solver
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Install the dependencies:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```sh
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. **Run the application:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```sh
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Open the application in your browser:**
 
-### Code Splitting
+   Go to `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **Interact with the maze:**
 
-### Analyzing the Bundle Size
+   - Click on boxes to set the source, target, and obstacles.
+   - Use the control panel to start solving the maze using BFS or DFS.
+   - Adjust the speed of the solver.
+   - Modify the maze dimensions by setting the number of rows and columns.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Structure
 
-### Making a Progressive Web App
+```
+maze-solver/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Main
+│   │   ├── MiniCube
+│   │   ├── NavBar
+│   │   
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── README.md
+└── package.json
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `components/`: Contains the React components for the application.
+  - `Main`: Folder Contain Component Main page.
+  - `MiniCube`: Folder Contain Component representing MiniCube.
+  - `NavBar`: Folder Contain Component for the NavBar.
+- `App.js`: Main component that integrates all parts of the application.
+- `index.js`: Entry point of the React application.
